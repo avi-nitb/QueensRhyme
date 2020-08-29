@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+    <EditText
+        android:id="@+id/editTextRhyme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:hint="Rhyme"
+        android:inputType="text"
+        android:textColor="#000000"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextChefCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextRhyme"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:hint="Number Of Chefs"
+        android:inputType="number"
+        android:textColor="#000000"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonGetPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Get Position"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4FCF08"
+        android:layout_below="@id/editTextChefCount"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewSafePosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:visibility="gone"
+        android:textColor="#11ABE8"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    
+
+</RelativeLayout>
